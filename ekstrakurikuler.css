@@ -20,20 +20,24 @@
 
 .banner-content {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;          /* Ubah dari 50% ke 0 */
+    left: 0;         /* Ubah dari 50% ke 0 */
     width: 100%;
+    height: 100%;    /* Tambahkan height 100% */
     padding: 20px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     color: white;
     text-align: center;
-    line-height: 1.6; /* Kembalikan line height untuk teks */
+    display: flex;           /* Tambahkan display flex */
+    flex-direction: column;  /* Tambahkan flex direction */
+    justify-content: center; /* Tengahkan konten secara vertikal */
+    align-items: center;     /* Tengahkan konten secara horizontal */
+    transform: none;         /* Hapus transform karena tidak diperlukan lagi */
 }
 
 .banner-content h1 {
     font-size: 42px;
-    margin-bottom: 15px;
+    margin-bottom: 45px;
     font-weight: 700;
 }
 
